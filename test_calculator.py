@@ -1,4 +1,4 @@
-from unittest import TestCase
+from unittest import TestCase, main
 from calculator import Calculator
 
 
@@ -21,3 +21,6 @@ class TestCalculator(TestCase):
         self.assertEqual(Calculator.divide(15, 3), 5)
         with self.assertRaises(ZeroDivisionError):
             Calculator.divide(15, 0)
+
+if __name__ == '__main__':
+    main()
